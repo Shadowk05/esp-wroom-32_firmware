@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.h": "cpp",
+        "*.hpp": "cpp"
+    },
+    "C_Cpp.intelliSenseEngine": "tag-parser",
+    "terminal.integrated.env.windows": {
+        "PATH": "C:\\Users\\hp\\.platformio\\penv\\Scripts"
+    }
+}
