@@ -1,0 +1,50 @@
+{
+  "build": {
+    "arduino": {
+      "ldscript": "esp32_out.ld",
+      "partitions": "default.csv",
+      "memory_type": "dio_qio"
+    },
+    "core": "esp32",
+    "extra_flags": [
+      "-DIDEASPARK_ESP32",
+      "-DARDUINO_USB_CDC_ON_BOOT",
+      "-DARDUINO_USB_MODE=1"
+    ],
+    "f_cpu": "240000000L",
+    "f_flash": "40000000L",
+    "flash_mode": "dio",
+    "hwids": [
+      [
+        "0x1a86",
+        "0x7523"
+      ]
+    ],
+    "mcu": "esp32",
+    "variant": "pinouts"
+  },
+  "connectivity": [
+    "bluetooth",
+    "wifi"
+  ],
+  "debug": {
+    "default_tool": "esp-prog",
+    "onboard_tools": [
+      "esp-prog"
+    ]
+  },
+  "frameworks": [
+    "arduino",
+    "espidf"
+  ],
+  "name": "Ideaspark ESP-WROOM-32 with OLED",
+  "upload": {
+    "flash_size": "4MB",
+    "maximum_ram_size": 327680,
+    "maximum_size": 4194304,
+    "require_upload_port": true,
+    "speed": 460800
+  },
+  "url": "https://ideaspark.com",
+  "vendor": "Ideaspark"
+}
